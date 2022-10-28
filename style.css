@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #eee;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+img {
+  transition: all 0.5s ease-in;
+  cursor: grab;
+  width: 100px;
+  object-fit: cover;
+}
+
+button {
+  appearance: none;
+  border: solid 1px #777;
+  background-color: red;
+  color: white;
+  font-size: 1rem;
+  border-radius: 15px;
+  text-align: center;
+  padding: 10px;
+  width: 60px;
+  height: 40px;
+  margin-top: 40px;
+  display: none;
+}
+
+.selected {
+  width: 400px;
+}
+
+.hide {
+  display: none;
+}
